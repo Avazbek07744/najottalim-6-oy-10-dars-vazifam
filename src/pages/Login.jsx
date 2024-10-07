@@ -45,8 +45,8 @@ const Login = () => {
     return (
         <div>
             <form ref={formRef} onSubmit={hendelSubmit} className='w-1/3 p-5 flex flex-col mx-auto gap-5 border border-blue-500 rounded-md mt-10'>
-                <input className='w-full p-2 border rounded-md' ref={emailRef} type="text" placeholder='Enter email...' />
-                <input className='w-full p-2 border rounded-md' ref={passwordRef} type="password" placeholder='Enter password...' />
+                <input defaultValue={'javazbek@gmail.com'} className='w-full p-2 border rounded-md' ref={emailRef} type="text" placeholder='Enter email...' />
+                <input defaultValue={'123456Az!'} className='w-full p-2 border rounded-md' ref={passwordRef} type="password" placeholder='Enter password...' />
                 <button disabled={loading} className='bg-blue-500 py-2 w-full rounded-md text-white text-xl'>{loading ? 'Loading...' : 'Login'}</button>
                 <Link to='/register'>Register ga o'tish</Link>
             </form>

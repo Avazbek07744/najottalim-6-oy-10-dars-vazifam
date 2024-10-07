@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Register from './pages/Register'
 import Login from './pages/Login'
 import Error from './pages/Error'
+import Myborts from './pages/Myborts'
 
 
 const App = () => {
@@ -44,6 +45,7 @@ const App = () => {
           }
         />
 
+        <Route path='/my-borts' element={<Myborts />} />
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
         <Route path='/*' element={<Error />} />
